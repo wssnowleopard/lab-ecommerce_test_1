@@ -1,0 +1,37 @@
+<div class="home-container">
+  <div class="category-section">
+    <div class="category-card" routerLink="/productos/equipos">
+      <h2>Equipos</h2>
+    </div>
+    <div class="product-examples">
+      <div *ngFor="let producto of equipos" class="product-card" [routerLink]="['/producto', producto.id]">
+        <img [src]="producto.imagen" [alt]="producto.nombre">
+        <h3>{{ producto.nombre }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <div class="category-card" routerLink="/productos/cristaleria">
+      <h2>Cristalería</h2>
+    </div>
+    <div class="product-examples">
+      <div *ngFor="let producto of cristaleria" class="product-card" [routerLink]="['/producto', producto.id]">
+        <img [src]="producto.imagen" [alt]="producto.nombre">
+        <h3>{{ producto.nombre }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <div class="category-card" routerLink="/productos/reactivos">
+      <h2>Reactivos</h2>
+    </div>
+    <div class="product-examples">
+      <div *ngFor="let producto of reactivos" class="product-card" [routerLink]="['/producto', producto.id]">
+        <img [src]="producto.imagen" [alt]="producto.nombre">
+        <h3>{{ producto.nombre }}</h3>
+      </div>
+    </div>
+  </div>
+</div>

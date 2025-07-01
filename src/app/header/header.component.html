@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="logo">
+    <h1>Lab-Ecommerce</h1>
+  </div>
+  <nav class="navigation">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/productos/equipos">Equipos</a>
+    <a routerLink="/productos/cristaleria">Cristalería</a>
+    <a routerLink="/productos/reactivos">Reactivos</a>
+    <a routerLink="/contacto">Contacto</a>
+  </nav>
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar productos...">
+    <button>Buscar</button>
+  </div>
+  <div class="cart">
+    <a routerLink="/carrito">Carrito ({{ cartItemCount }})</a>
+  </div>
+</header>
