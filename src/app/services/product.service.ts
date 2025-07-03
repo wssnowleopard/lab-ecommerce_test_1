@@ -18,11 +18,10 @@ export class ProductService {
     { id: 8, nombre: 'Pipeta Graduada', precio: 8, cantidadExistente: 120, cantidadSolicitada: 0, categoria: 'cristaleria', imagen: 'assets/images/pipeta_graduada_10ml.png' },
     { id: 9, nombre: 'Bureta', precio: 25, cantidadExistente: 50, cantidadSolicitada: 0, categoria: 'cristaleria', imagen: 'assets/images/bureta_50ml.png' },
     { id: 10, nombre: 'Probeta', precio: 12, cantidadExistente: 90, cantidadSolicitada: 0, categoria: 'cristaleria', imagen: 'assets/images/probeta_500ml.png' },
-    { id: 11, nombre: 'Ácido Clorhídrico', precio: 50, cantidadExistente: 20, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/products/acido.png' },
-    { id: 12, nombre: 'Hidróxido de Sodio', precio: 40, cantidadExistente: 30, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/hidroxido_de_sodio_500g.png' },
-    { id: 13, nombre: 'Etanol', precio: 30, cantidadExistente: 50, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/etanol_pureza_96.png' },
-    { id: 14, nombre: 'Metanol', precio: 35, cantidadExistente: 40, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/metanol_puro.png' },
-    { id: 15, nombre: 'Acetona', precio: 25, cantidadExistente: 60, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/acetona_extrapura.png' },
+    { id: 11, nombre: 'Hidróxido de Sodio', precio: 40, cantidadExistente: 30, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/hidroxido_de_sodio_500g.png' },
+    { id: 12, nombre: 'Etanol', precio: 30, cantidadExistente: 50, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/etanol_pureza_96.png' },
+    { id: 13, nombre: 'Metanol', precio: 35, cantidadExistente: 40, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/metanol_puro.png' },
+    { id: 14, nombre: 'Acetona', precio: 25, cantidadExistente: 60, cantidadSolicitada: 0, categoria: 'reactivos', imagen: 'assets/images/acetona_extrapura.png' },
   ];
 
   constructor() { }
