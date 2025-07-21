@@ -1,3 +1,23 @@
 .contact-container {
-  padding: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.whatsapp-ico {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: white;
 }

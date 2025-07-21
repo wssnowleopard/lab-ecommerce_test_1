@@ -32,6 +32,10 @@ export class CartService {
     return this.cartItems.reduce((total, product) => total + (product.precio * product.cantidadSolicitada), 0);
   }
 
+  getTotalItems() {
+    return this.cartItems.reduce((total, product) => total + product.cantidadSolicitada, 0);
+  }
+
   removeItem(productId: number) {
     this.cartItems = this.cartItems.filter(p => p.id !== productId);
     this.cart.next(this.cartItems);
