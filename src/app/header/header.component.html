@@ -10,8 +10,8 @@
     <a routerLink="/contacto">Contacto</a>
   </nav>
   <div class="search-bar">
-    <input type="text" placeholder="Buscar productos...">
-    <button>Buscar</button>
+    <input type="text" placeholder="Buscar productos..." #searchInput>
+    <button (click)="search(searchInput.value)">Buscar</button>
   </div>
   <div class="cart">
     <a routerLink="/carrito">Carrito ({{ cartItemCount }})</a>

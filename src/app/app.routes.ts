@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'productos/search/:term', component: ProductListComponent },
   { path: 'productos/:categoria', component: ProductListComponent },
   { path: 'producto/:id', component: ProductDetailComponent },
   { path: 'carrito', component: CartComponent },

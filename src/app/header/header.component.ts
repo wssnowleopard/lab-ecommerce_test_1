@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -13,11 +13,15 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent implements OnInit {
   cartItemCount: number = 0;
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService, private router: Router) { }
 
   ngOnInit(): void {
     this.cartService.getCartItems().subscribe(items => {
       this.cartItemCount = items.reduce((total, item) => total + item.cantidadSolicitada, 0);
     });
+  }
+
+  search(term: string) {
+    this.router.navigate(['/productos/search', term]);
   }
 }
